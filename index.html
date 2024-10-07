@@ -11,7 +11,7 @@
     :root, html, body {
       margin: 0;
       padding: 0;
-      background-color: var(--ddd-accent-1);
+      background-color: var(--red-accent-1);
     }
     #demo {
       margin: var(--ddd-spacing-2);
@@ -23,10 +23,11 @@
     }
     counter-app:hover {
       box-shadow: var(--ddd-boxShadow-sm);
+
     }
     #example {
       --counter-app-font-size: var(--ddd-font-size-l);
-      background-color: var(--ddd-accent-2);
+      background-color: var(--red-accent-2);
       color: var(--ddd-primary-17);
     }
   </style>
@@ -38,11 +39,11 @@
     <h1>counter-app</h1>
     <!-- this is going to do whatever the tag's defaults are -->
     <h2>Default</h2>
-    <counter-app></counter-app>
+    <counter-app counter="16" min="10" max="25"></counter-app>
     <h2>Slot usage</h2>
-    <counter-app data-accent="2" data-primary="17"><div>Sample slot content</div></counter-app>
+    <counter-app counter="16" min="10" max="25"><div>Sample slot content</div></counter-app>
     <h2>Property usage</h2>
-    <counter-app id="example" title="Sample property title"></counter-app>
+    <counter-app counter="16" min="10" max="25"></counter-app>
   </div>
   <script type="module" src="./src/counter-app.js"></script>
 

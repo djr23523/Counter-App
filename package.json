@@ -20,6 +20,7 @@
     ],
     "dependencies": {
         "@haxtheweb/d-d-d": "^9.0.5",
+        "@haxtheweb/multiple-choice": "^9.0.6",
         "lit": "^3.1.4",
         "package.json": "^2.0.1"
     },
